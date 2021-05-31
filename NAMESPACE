@@ -1,0 +1,7 @@
+exportPattern("^[[:alpha:]]+")
+importFrom("stats", "runif")
+importFrom("reticulate", "py")
+importFrom("reticulate", "import")
+importFrom("reticulate", "py_run_file")
+importFrom("reticulate", "py_install")
+importFrom("reticulate", "py_discover_config")
