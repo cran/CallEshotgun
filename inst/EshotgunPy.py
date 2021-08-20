@@ -615,14 +615,23 @@ def build_and_fit_GP(Xtr, Ytr):
                             num_processes=1,
                             verbose=False)
     return model
-  
 
-def callShotgun(Xtr, Ytr, f_lb, f_ub, q=10, epsilon = 0.1):
+def callShotgun(Xtr, Ytr, f_lb, f_ub, q=10, epsilon = 0.1, pf=False):
     model = build_and_fit_GP(Xtr, Ytr)
     
     if type(f_lb) is float:
-      Xnew = egreedy_shotgun_v2(model, np.array([f_lb]), np.array([f_ub]), 1000, q, None, epsilon)
+      Xnew = egreedy_shotgun(model, np.array([f_lb]), np.array([f_ub]), 1000, q, None, epsilon, pf)
     else:
-      Xnew = egreedy_shotgun_v2(model, f_lb, f_ub, 1000, q, None, epsilon)
+      Xnew = egreedy_shotgun(model, f_lb, f_ub, 1000, q, None, epsilon, pf)
+    return Xnew
+    
+
+def callShotgunV2(Xtr, Ytr, f_lb, f_ub, q=10, epsilon = 0.1, pf=False):
+    model = build_and_fit_GP(Xtr, Ytr)
+    
+    if type(f_lb) is float:
+      Xnew = egreedy_shotgun_v2(model, np.array([f_lb]), np.array([f_ub]), 1000, q, None, epsilon, pf)
+    else:
+      Xnew = egreedy_shotgun_v2(model, f_lb, f_ub, 1000, q, None, epsilon, pf)
     return Xnew
     

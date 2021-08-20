@@ -15,9 +15,6 @@ checkLibraries(method = "auto", conda = "auto")
 The function will download all required Python Packages that
 are rquired for the e-shotgun to run properly.
 }
-\value{
-No return value, called for side effects
-}
 \examples{
 checkLibraries()
 }

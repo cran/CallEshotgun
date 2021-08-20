@@ -11,9 +11,6 @@ runSampleOpt(fn, budget = 100)
 
 \item{budget}{budget for the run}
 }
-\value{
-No return value, called for visual showcasing
-}
 \description{
-Optimizing a function with the e-shotgun
+Optimizing a function with the e-shotgun.
 }

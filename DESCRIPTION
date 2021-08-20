@@ -2,7 +2,7 @@ Package: CallEshotgun
 Type: Package
 Title: Providing an Interface to the e-Shotgun Algorithm for Bayesian
         Optimization
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(person("Lennard", "Reese", role = c("aut", "cre"), email = "CeSMaintainer@web.de"),
     person("Frederik", "Rehbach", role = "ctb"))
 Maintainer: Lennard Reese <CeSMaintainer@web.de>
@@ -17,8 +17,8 @@ Config/testthat/edition: 3
 Depends: reticulate, R (>= 2.10)
 RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2021-05-29 12:42:04 UTC; Lennard
+Packaged: 2021-08-20 17:33:30 UTC; Lennard
 Author: Lennard Reese [aut, cre],
   Frederik Rehbach [ctb]
 Repository: CRAN
-Date/Publication: 2021-05-31 11:10:02 UTC
+Date/Publication: 2021-08-20 18:00:02 UTC
